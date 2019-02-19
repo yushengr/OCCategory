@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.name             = 'OCCategory'
   s.version          = '0.1.0'
   s.summary          = 'OC Category'
-  s.description      = 'test'
+  s.description      = 'This is OC Category'
 
   s.homepage         = 'http://www.adbana.com/'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
@@ -18,6 +18,6 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/yushengr/OCCategory', :tag => s.version.to_s }
   s.ios.deployment_target = '7.0'
 
-  s.source_files = 'Classes/*'
+  s.source_files = 'Classes/**/**'
 
 end
