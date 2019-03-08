@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'http://www.adbana.com/'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'InsectQY' => '704861917@qq.com' }
-  s.source           = { :git => 'https://github.com/yushengr/OCCategory', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/yushengr/OCCategory.git', :tag => s.version.to_s }
   s.ios.deployment_target = '7.0'
 
   s.source_files = 'Classes/**/**'
