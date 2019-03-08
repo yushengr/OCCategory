@@ -20,4 +20,6 @@ Pod::Spec.new do |s|
 
   s.source_files = 'Classes/**/**'
 
+  s.dependency 'CocoaSecurity'
+
 end
