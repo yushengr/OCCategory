@@ -14,8 +14,8 @@
 
 - (NSString *)sign {
 
-    NSArray *keys = self.allKeys;
-    NSArray *values = self.allValues;
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:nil ascending:YES];
+    NSArray *keys = [self.allKeys sortedArrayUsingDescriptors:[NSArray arrayWithObjects:sortDescriptor,nil]];
     NSString *signKey = @"qszhuanvaz3TxpWtmHkioMwjpeYGixFDQSzhUan";
 
     NSMutableString *sign = [NSMutableString string];
@@ -23,9 +23,9 @@
     for (int i = 0; i < keys.count; i++) {
 
         NSString *key = keys[i];
-        NSString *value = values[i];
+        NSString *value = self[key];
         NSMutableString *attach = [NSMutableString stringWithFormat:@"%@=%@", key, value];
-        if (i != keys.count - 1) { 
+        if (i != keys.count - 1) {
             [attach appendString:@"&"];
         }else {
             [attach appendString:signKey];
