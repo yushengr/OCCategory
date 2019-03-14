@@ -12,4 +12,15 @@
 
 + (instancetype)viewFromXib;
 
+@property (nonatomic , assign) CGFloat qy_width;
+@property (nonatomic , assign) CGFloat qy_height;
+@property (nonatomic , assign) CGSize  qy_size;
+@property (nonatomic , assign) CGFloat qy_x;
+@property (nonatomic , assign) CGFloat qy_y;
+@property (nonatomic , assign) CGPoint qy_origin;
+@property (nonatomic , assign) CGFloat qy_centerX;
+@property (nonatomic , assign) CGFloat qy_centerY;
+@property (nonatomic , assign) CGFloat qy_right;
+@property (nonatomic , assign) CGFloat qy_bottom;
+
 @end
