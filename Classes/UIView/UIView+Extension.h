@@ -11,6 +11,7 @@
 @interface UIView (Extension)
 
 + (instancetype)viewFromXib;
+- (UIViewController *)getViewController;
 
 @property (nonatomic , assign) CGFloat qy_width;
 @property (nonatomic , assign) CGFloat qy_height;
