@@ -20,6 +20,21 @@ Pod::Spec.new do |s|
 
   s.source_files = 'Classes/**/**'
 
-  s.dependency 'CocoaSecurity'
+  s.subspec 'NSDictionary' do |ss|
+      ss.source_files = 'NSDictionary/Classes/**'
+      ss.dependency 'CocoaSecurity'
+  end
+
+  s.subspec 'UICollectionView' do |ss|
+      ss.source_files = 'UICollectionView/Classes/**'
+  end
+
+  s.subspec 'UITableView' do |ss|
+      ss.source_files = 'UITableView/Classes/**'
+  end
+
+  s.subspec 'UIView' do |ss|
+      ss.source_files = 'UIView/Classes/**'
+  end
 
 end
