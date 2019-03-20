@@ -18,8 +18,6 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/yushengr/OCCategory.git', :tag => s.version.to_s }
   s.ios.deployment_target = '7.0'
 
-  s.source_files = 'Classes/**/**'
-
   s.subspec 'NSDictionary' do |ss|
       ss.source_files = 'NSDictionary/Classes/**'
       ss.dependency 'CocoaSecurity'
